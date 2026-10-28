@@ -1,6 +1,6 @@
 # 多平台数据分析
 
-多平台商务数据采集与分析：采集 50000+ 条业务数据，完成清洗、分析并输出商业分析报告（队长）
+> 多平台商务数据采集与分析：采集 50000+ 条业务数据，完成清洗、分析并输出商业分析报告（队长）
 
 ## 项目内容
 
@@ -11,10 +11,41 @@
 
 ## 技术栈
 
-Python | pandas | openpyxl | matplotlib | Excel（数据透视表） | SPSS
+Python | pandas | openpyxl | matplotlib | Excel（数据透视表）| SPSS
 
 ## 核心发现
 
 - 样本 19464 条视频、9199 位作者，总播放 18.56 亿
-- 播放量高度头部集中（均值/中位数 = 7.9），内容投放需重点押注头部作者与爆款选题
+- 播放量高度头部集中（均值/中位数 = 7.9），内容投放需重点关注头部作者与爆款选题
 - 品牌内容对比：竞品单条平均播放领先，自身品牌互动率最高
+
+## 可视化图表
+
+### 品牌对比
+
+![品牌播放与互动对比](brand-comparison.png)
+
+![品牌互动率对比](brand-engagement.png)
+
+### 播放量分布
+
+![播放量分布](play-distribution.png)
+
+![作者层级分布](author-tier.png)
+
+### 趋势与时长效应
+
+![月度发布与播放趋势](monthly-trend.png)
+
+![视频时长与播放量关系](duration-effect.png)
+
+## 运行方法
+
+1. 安装依赖：`pip install -r requirements.txt`
+2. 运行分析脚本：`python analyze_bilibili.py`
+
+## 项目结构
+
+- analyze_bilibili.py —— 数据清洗与分析脚本
+- *.png —— 输出的可视化图表
+- README.md —— 项目说明
